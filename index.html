@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The ---> DrapDowns</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .uld1{
+            background-color: rgb(36, 204, 255);
+            overflow: auto;
+        }
+        .liler1{
+            float: left;
+            list-style-type: none;
+            margin-left: 3%;
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+        .liler1:hover{
+            background-color: rgb(43, 176, 217);
+            cursor: pointer;
+        }
+        .lilerr{
+            color: white;
+            list-style-type: none;
+            padding: 14px;
+            padding-left: 6px;
+        }
+        .lilerr:hover{
+            background-color: rgba(33, 172, 214, 0.6);
+        }
+        .uld2{
+            background-color: rgb(59, 59, 59);
+            position: absolute;
+            left: 15vw;
+            top: 7%;
+            width: 19vw;
+            display: none;
+        }
+        footer{
+            background-color: rgb(36, 204, 255);
+            padding: 4px;
+        }
+        #xususi:hover .uld2{
+            display: block;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <ul class="uld1">
+        <li class="liler1">Categories<i class="fa-solid fa-angle-down"></i></li>
+        <li class="liler1" id="xususi">Services<i class="fa-solid fa-angle-down"></i>
+            <ul class="uld2">
+                <li class="lilerr">Service One</li>
+                <li class="lilerr">Service Two</li>
+                <li class="lilerr">Service Three</li>
+                <li class="lilerr">Service Four</li>
+                <li class="lilerr">Service Five</li>
+                <li class="lilerr">Service Six</li>
+                <footer></footer>
+            </ul>
+        </li>
+        <li class="liler1">Contact Us</li>
+    </ul>
+</body>
+</html>
